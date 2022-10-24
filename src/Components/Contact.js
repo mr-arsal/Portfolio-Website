@@ -7,10 +7,15 @@ const Contact = (props) => {
 
     // Code for Contact Form Validation
     const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
     // const [name, setName] = useState('');
 
     const handleOnChange = (e) => {
         setEmail(e.target.value);
+        
+    }
+    const toEditName = (e)=>{
+        setName(e.target.value);
     }
     // const Validation = () => {
     //     let emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -33,9 +38,13 @@ const Contact = (props) => {
     const sendEmail = (e) => {
         e.preventDefault();
         let emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        let nameRegex = /^[a-zA-Z][a-zA-Z0-9]{2,15}$/;
         let email = document.getElementById('email');
+        let name = document.getElementById('name');
         let string = email.value;
-        if (emailRegex.test(string)) {
+        let regular = name.value;
+        if (emailRegex.test(string) && nameRegex.test(regular)) {
+            name.classList.remove('is-invalid');
             email.classList.remove('is-invalid');
             emailjs.sendForm('service_x8kls0h', 'template_csqs0lp', form.current, 'w5UVBIMJigL2jQySU')
                 .then((result) => {
@@ -47,7 +56,8 @@ const Contact = (props) => {
                 });
         }
         else {
-            email.classList.add('is-invalid')
+            email.classList.add('is-invalid');
+            name.classList.add('is-invalid');
             alert('Message has not sent')
         }
 
@@ -67,9 +77,9 @@ const Contact = (props) => {
                 <form ref={form} onSubmit={sendEmail} className='full-widht margin-top ' style={{ width: '40%' }}>
                     <div className="mb-3">
                         <label htmlFor="exampleFormControlInput1" className="form-label"><span className={`fs-5 fw-bold  contact-npem text-${props.mode === 'light' ? 'black' : 'white'}`}>Name</span> </label>
-                        <input type="text" name="user_name" className="form-control" id="name" placeholder="Enter Your Full Name" />
+                        <input type="text" name="user_name" className="form-control" id="name" value={name} onChange={toEditName} placeholder="Enter Your Full Name" />
                         <small id="namevalid" className="form-text text-red invalid-feedback fs-6">
-                            Your name must be 2-10 characters long and should not start with a number
+                            Your name must be 2-15 characters long and should not start with a number
                         </small>
                     </div>
                     {/* <div className="mb-3">
