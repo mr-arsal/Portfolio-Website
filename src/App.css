@@ -1,38 +1,302 @@
-.App {
-  text-align: center;
+.navbar-toggler{
+  color: #0d6efd;
+  background-color: white;
+}
+.navbar-toggler:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.letter-spcaing{
+  letter-spacing: 2px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blue-image{
+  width: 40%;
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  z-index: -1
+}
+.perfect-blue{
+  background-color: white ;
+  /* border-radius: 5px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* For the placeholder */
+
+.form-control::placeholder {
+  color: black;
+  opacity: 0.6; 
+}
+
+.aboutme-fs{
+  font-size: 17px;
+}
+
+/* Dark mode button */
+.form-switch .form-check-input {
+  width: 2.4em;
+  /* border-color: rgb(109, 131, 242);
+  border-width: 2px; */
+}
+.form-check-input {
+  height: 20px;
+}
+
+
+/* Download Resume Button */
+
+.custom-btn {
+  width: 190px;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  /* padding: 10px 25px; */
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  /* background: transparent; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1); */
+  outline: none;
+}
+
+.btn-design {
+  border: none;
+  color: #000;
+}
+.btn-design:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-design:hover {
+  color: #000;
+}
+.btn-design:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-design:active {
+  top: 2px;
+}
+
+/* ------------------------------------------------ */
+
+/* Media Queries */
+/* For Smartphone */
+
+@media (max-width: 576px){
+  
+  .text-adjustment{
+    font-size: 1.1rem !important;
+  }
+  .json-text{
+    font-size: 15.5px !important;
+  }
+  .json-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact-npem{
+    font-size: 17px !important;
+  }
+  .navbar-items{
+    font-size: 17px !important;
+  }
+  .blue-image{
+    width: 40%;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    z-index: -1
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen  and (max-width: 767px) { 
+  .query-textcenter-md{
+    display: block !important; 
+    /* height: 720px !important; */
+  }
+  
+  .query-textcenter{
+    text-align: center;
+  }
+  .margin-top{
+    margin-top: 6.5rem;
+  }
+  .full-widht{
+    width: 100% !important;
+  }
+  .fontsize-arslan{
+    font-size: 33px !important;
+  }
+  .json-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+ 
 }
 
-.App-link {
-  color: #61dafb;
+/* Adjusting -Javascript in json- for tablet*/
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .json-margin{
+    margin-left: 4.3rem;
+  }
+  /* For aboutme */
+  .aboutme-query{
+    /* height: 350px; */
+    font-size: 14px;
+  }
+  .margin-top-query{
+    margin: none !important;
+  }
+  .json-middle{
+    position: relative;
+    bottom: 70px;
+    left: 30px;
+  }
+  .position-for-contact{
+    position: relative;
+    top: 110px;
+  }
+  .reach-me{
+    position: relative;
+    left: 100px;    
+  }
+  .json-text{
+    font-size: 15px !important;
+  }
+  .text-adjustment{
+    font-size: 1.1rem !important;
+  }
+  .fontsize-arslan{
+    font-size: 33px !important;
+  }
+  .json-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .json-width-contact{
+    width: 40%;
+  }
+  .json-width-contact{
+    width: 50%;
+    font-size: 14px !important;
+  }
+  .aboutme-btntopmargin{
+    margin-top: 0px !important;
+  }
+  .blue-image{
+    width: 40%;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    z-index: -1
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 992px) and (max-width: 1326px){
+  /* For aboutme */
+  .aboutme-query{
+    /* height: 350px; */
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+  .margin-top-query{
+    margin: none !important;
+  }
+  .json-middle{
+    position: relative;
+    bottom: 40px;
+    /* left: 100px; */
+  }
+  .position-for-contact{
+    position: relative;
+    top: 110px;
+  }
+  .reach-me{
+    position: relative;
+    left: 100px;    
+  }
+  .json-width-contact{
+    width: 40%;
+    font-size: 16px !important;
+  }
+  
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .json-width-contact{
+    width: 40%;
+    font-size: 15px !important;
+  }
+  .blue-image{
+    width: 40%;
+    position: absolute;
+    top: 71px;
+    right: 0px;
+    z-index: -1;
+    /* height: 780px; */
   }
 }
+
+
+@media screen and (min-width: 1327px) and (max-width: 2000px){
+  .json-middle{
+    position: relative;
+    bottom: 20px;
+  }
+  .position-for-contact{
+    position: relative;
+    top: 110px;
+  }
+  .reach-me{
+    position: relative;
+    left: 100px;    
+  }
+  .json-width{
+    width: 60%;
+  }
+  .json-width-contact{
+    width: 40%;
+    margin-left: 20%;
+  }
+  .blue-image{
+    width: 40%;
+    position: absolute;
+    top: 71px;
+    right: 0px;
+    z-index: -1;
+    height: 790px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
