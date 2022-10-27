@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/arslan-nadeem/static/css/main.7ffe66b1.css",
+    "main.js": "/arslan-nadeem/static/js/main.52073c3d.js",
+    "static/js/787.bc1d2298.chunk.js": "/arslan-nadeem/static/js/787.bc1d2298.chunk.js",
+    "index.html": "/arslan-nadeem/index.html",
+    "main.7ffe66b1.css.map": "/arslan-nadeem/static/css/main.7ffe66b1.css.map",
+    "main.52073c3d.js.map": "/arslan-nadeem/static/js/main.52073c3d.js.map",
+    "787.bc1d2298.chunk.js.map": "/arslan-nadeem/static/js/787.bc1d2298.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ffe66b1.css",
+    "static/js/main.52073c3d.js"
+  ]
+}
