@@ -1,6 +1,22 @@
+/* About me Imgage */
+.img{
+  height: 350px !important;
+}
+/*  */
+.custom-toggler.navbar-toggler {
+  border-color: none !important;
+  border : none
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(109, 131, 242)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+ }
+
+
 .navbar-toggler{
   color: #0d6efd;
-  background-color: white;
 }
 .navbar-toggler:focus {
   text-decoration: none !important;
@@ -21,7 +37,6 @@
 }
 .perfect-blue{
   background-color: white ;
-  /* border-radius: 5px; */
 }
 
 /* For the placeholder */
@@ -102,10 +117,76 @@
 /* ------------------------------------------------ */
 
 /* Media Queries */
+/* For I-Phones */
+
+@media only screen and (max-width: 384px)  { 
+  .query-textcenter-md{
+    display: block !important; 
+  }
+  /* Margins from top for both blocks */
+  .margin-top{
+    margin-top: 6rem;
+  }
+  .query-textcenter{
+    text-align: center;
+  }
+  .blue-image{
+    width: 40%;
+    position: absolute;
+    top: 56px;
+    right: 0px;
+    z-index: -1
+  }
+  .img{
+    height: 300px !important;
+  }
+  /* Contact full width.. NEM */
+  .full-widht{
+    width: 100% !important;
+  }
+  /* Portfolio font size */
+  .port{
+    font-size: 20px !important;
+  }
+  .folio{
+    font-size: 20px !important;
+  }
+  .navbar-items{
+    font-size: 16px !important;
+  }
+  .fontsize-arslan{
+    font-size: 32px !important;
+  }
+  .fs_creative{
+    font-size: 17px !important;
+  }
+  .json-text{
+    font-size: 14.5px !important;
+  }
+  .json-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact-npem{
+    font-size: 17px !important;
+  }
+  .json-margin{
+    margin-left: none !important;
+  }
+}
+
 /* For Smartphone */
 
-@media (max-width: 576px){
-  
+@media only screen and (min-width: 384px)  and (max-width: 767px){
+  .query-textcenter-md{
+    display: block !important; 
+  }
+  .query-textcenter{
+    text-align: center;
+  }
+  .margin-top{
+    margin-top: 6rem;
+  }
   .text-adjustment{
     font-size: 1.1rem !important;
   }
@@ -119,22 +200,38 @@
   .contact-npem{
     font-size: 17px !important;
   }
-  .navbar-items{
-    font-size: 17px !important;
-  }
+  
   .blue-image{
     width: 40%;
     position: absolute;
-    top: 60px;
+    top: 56px;
     right: 0px;
     z-index: -1
   }
+  /* Contact full width.. NEM */
+  .full-widht{
+    width: 100% !important;
+  }
+  /* Portfolio font size */
+  .port{
+    font-size: 20px !important;
+  }
+  .folio{
+    font-size: 20px !important;
+  }
+  .navbar-items{
+    font-size: 16px !important;
+  }
+  .json-margin{
+    margin-left: none !important;
+  }
+  
 }
 
-@media screen  and (max-width: 767px) { 
+/* @media screen  and (max-width: 767px) { 
   .query-textcenter-md{
     display: block !important; 
-    /* height: 720px !important; */
+   
   }
   
   .query-textcenter{
@@ -153,15 +250,22 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .blue-image{
+    width: 40%;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    z-index: -1
+  }
  
-}
+} */
 
 /* Adjusting -Javascript in json- for tablet*/
 
-@media screen and (min-width: 767px) and (max-width: 991px) {
-  .json-margin{
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+  /* .json-margin{
     margin-left: 4.3rem;
-  }
+  } */
   /* For aboutme */
   .aboutme-query{
     /* height: 350px; */
@@ -172,9 +276,10 @@
   }
   .json-middle{
     position: relative;
-    bottom: 70px;
+    bottom: 40px;
     left: 30px;
   }
+  
   .position-for-contact{
     position: relative;
     top: 110px;
@@ -184,7 +289,7 @@
     left: 100px;    
   }
   .json-text{
-    font-size: 15px !important;
+    font-size: 14.5px !important;
   }
   .text-adjustment{
     font-size: 1.1rem !important;
@@ -209,13 +314,39 @@
   .blue-image{
     width: 40%;
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 0px;
     z-index: -1
   }
+  .md_small_button{
+    font-size: 14px !important;
+  }
+  .custom-btn{
+    width: 160px;
+  }
+  .md_social_icon{
+    font-size: 1.7rem !important;
+  }
+  /* Portfolio font size */
+  .port{
+    font-size: 20px !important;
+  }
+  .folio{
+    font-size: 20px !important;
+  }
+  .navbar-items{
+    font-size: 16px !important;
+  }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1326px){
+
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px)  {
+  /* .json-margin{
+    margin-left: 4.3rem;
+  } */
   /* For aboutme */
   .aboutme-query{
     /* height: 350px; */
@@ -226,8 +357,159 @@
   }
   .json-middle{
     position: relative;
+    bottom: 30px;
+    left: 30px;
+  }
+  
+  .position-for-contact{
+    position: relative;
+    top: 110px;
+  }
+  .reach-me{
+    position: relative;
+    left: 100px;    
+  }
+  .json-text{
+    width: 62%;
+    font-size: 14.5px !important;
+  }
+  .text-adjustment{
+    font-size: 1.1rem !important;
+  }
+  .fontsize-arslan{
+    font-size: 33px !important;
+  }
+  .json-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .json-width-contact{
+    width: 40%;
+    font-size: 14px !important;
+  }
+  .aboutme-btntopmargin{
+    margin-top: 0px !important;
+  }
+  .blue-image{
+    width: 40%;
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    z-index: -1
+  }
+  .md_small_button{
+    font-size: 14px !important;
+  }
+  .custom-btn{
+    width: 160px;
+  }
+  .md_social_icon{
+    font-size: 1.7rem !important;
+  }
+  /* Portfolio font size */
+  .port{
+    font-size: 20px !important;
+  }
+  .folio{
+    font-size: 20px !important;
+  }
+  .navbar-items{
+    font-size: 16px !important;
+  }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1201px)   {
+  /* .json-margin{
+    margin-left: 4.3rem;
+  } */
+  /* For aboutme */
+  .aboutme-query{
+    /* height: 350px; */
+    font-size: 14px;
+  }
+  .margin-top-query{
+    margin: none !important;
+  }
+  .json-middle{
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+  }
+  .position-for-contact{
+    position: relative;
+    top: 110px;
+  }
+  .reach-me{
+    position: relative;
+    left: 100px;    
+  }
+  .json-text{
+    width: 50%;
+    font-size: 14.5px !important;
+  }
+  .text-adjustment{
+    font-size: 1.1rem !important;
+  }
+  .fontsize-arslan{
+    font-size: 33px !important;
+  }
+  .json-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .json-width-contact{
+    width: 35%;
+    font-size: 14px !important;
+  }
+  .aboutme-btntopmargin{
+    margin-top: 0px !important;
+  }
+  .blue-image{
+    
+    width: 40%;
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    z-index: -1
+  }
+  .md_small_button{
+    font-size: 14px !important;
+  }
+  .custom-btn{
+    width: 160px;
+  }
+  .md_social_icon{
+    font-size: 1.7rem !important;
+  }
+  /* Portfolio font size */
+  .port{
+    font-size: 20px !important;
+  }
+  .folio{
+    font-size: 20px !important;
+  }
+  .navbar-items{
+    font-size: 16px !important;
+  }
+}
+
+/* @media screen and (min-width: 992px) and (max-width: 1326px){
+  .aboutme-query{
+    font-size: 14px;
+  }
+  .margin-top-query{
+    margin: none !important;
+  }
+  .json-middle{
+    position: relative;
     bottom: 40px;
-    /* left: 100px; */
   }
   .position-for-contact{
     position: relative;
@@ -242,9 +524,9 @@
     font-size: 16px !important;
   }
   
-}
+} */
 
-@media screen and (min-width: 992px) and (max-width: 1199px){
+/* @media screen and (min-width: 992px) {
   .json-width-contact{
     width: 40%;
     font-size: 15px !important;
@@ -255,12 +537,11 @@
     top: 71px;
     right: 0px;
     z-index: -1;
-    /* height: 780px; */
   }
-}
+} */
 
 
-@media screen and (min-width: 1327px) and (max-width: 2000px){
+/* @media screen and (min-width: 1327px) {
   .json-middle{
     position: relative;
     bottom: 20px;
@@ -274,10 +555,10 @@
     left: 100px;    
   }
   .json-width{
-    width: 60%;
+    width: 80%;
   }
   .json-width-contact{
-    width: 40%;
+    width: 50%;
     margin-left: 20%;
   }
   .blue-image{
@@ -288,7 +569,7 @@
     z-index: -1;
     height: 790px;
   }
-}
+} */
 
 
 

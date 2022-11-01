@@ -8,7 +8,7 @@ import Contact from './Components/Contact'
 import React, { useState } from 'react'
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -33,19 +33,26 @@ function App() {
     }
   }
 
+  const hideNavbar = () => {
+    setTimeout(() => {
+      
+      document.getElementById('navbarSupportedContent').classList.remove("show")
+    }, 60);
+}
+
  
 
   return (
     <>
-    <div>
-      <BrowserRouter>
+    <div onClick={hideNavbar}>
+      <HashRouter>
         <NavBar mode={mode} toggleMode={toggleMode} />
         <Routes>
           <Route path="/" element={<LandingPage mode={mode}/>} />
           <Route path="/aboutme" element={<AboutME mode={mode}/>} />
           <Route path="/contact" element={<Contact mode={mode}/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
       
       

@@ -12,9 +12,9 @@ const Contact = (props) => {
 
     const handleOnChange = (e) => {
         setEmail(e.target.value);
-        
+
     }
-    const toEditName = (e)=>{
+    const toEditName = (e) => {
         setName(e.target.value);
     }
     // const Validation = () => {
@@ -35,7 +35,7 @@ const Contact = (props) => {
     // Code for contact page tp work 
     const form = useRef('');
 
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault();
         let emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         let nameRegex = /^[a-zA-Z][a-zA-Z0-9]{2,15}$/;
@@ -46,10 +46,10 @@ const Contact = (props) => {
         if (emailRegex.test(string) && nameRegex.test(regular)) {
             name.classList.remove('is-invalid');
             email.classList.remove('is-invalid');
-            emailjs.sendForm('service_x8kls0h', 'template_csqs0lp', form.current, 'w5UVBIMJigL2jQySU')
+            await emailjs.sendForm('service_7m15y24', 'template_s9wdnon', form.current, 'nW4fVme9JLnT2p0Uc')
                 .then((result) => {
                     console.log(result.text);
-                    alert('Message has sent')
+                    alert('Message has sent to Arslan Nadeem')
                 }, (error) => {
                     console.log(error.text);
                     alert('Message has not sent')
@@ -64,7 +64,7 @@ const Contact = (props) => {
 
 
 
-        // e.target.reset()
+        e.target.reset()
     };
 
 
@@ -101,7 +101,7 @@ const Contact = (props) => {
                     <input className='btn btn-primary ps-3 pe-3' type="submit" value="Submit" ></input>
                 </form>
 
-                <div className={`text-${props.mode === 'light' ? 'primary' : 'white'} full-widht container margin-top p-lg-4  json-middle lh-lg fs-5 json-text json-width-contact shadow  rounded json-padding`} style={{ backgroundColor: props.mode === 'light' ? 'white' : 'rgb(35, 35, 35)' }}>
+                <div className={`contact_middle text-${props.mode === 'light' ? 'primary' : 'white'} full-widht container margin-top p-lg-4  json-middle lh-lg fs-5 json-text json-width-contact shadow  rounded json-padding`} style={{ backgroundColor: props.mode === 'light' ? 'white' : 'rgb(35, 35, 35)' }}>
                     <div>1 &nbsp; &nbsp; &nbsp; &#123;</div>
                     <div>2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"e-mail" : "<span className='fw-bold'>arslandev7@gmail.com</span>", </div>
                     <div>3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"phone" : "<span className='fw-bold'>+92335 0505088</span>" </div>
