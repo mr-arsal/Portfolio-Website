@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/arslan-nadeem/static/css/main.7ffe66b1.css",
-    "main.js": "/arslan-nadeem/static/js/main.52073c3d.js",
+    "main.css": "/arslan-nadeem/static/css/main.07d6fee0.css",
+    "main.js": "/arslan-nadeem/static/js/main.dc52e66a.js",
     "static/js/787.bc1d2298.chunk.js": "/arslan-nadeem/static/js/787.bc1d2298.chunk.js",
+    "static/media/arslanimage.jpeg": "/arslan-nadeem/static/media/arslanimage.0ff91a645525ed4a07bb.jpeg",
     "index.html": "/arslan-nadeem/index.html",
-    "main.7ffe66b1.css.map": "/arslan-nadeem/static/css/main.7ffe66b1.css.map",
-    "main.52073c3d.js.map": "/arslan-nadeem/static/js/main.52073c3d.js.map",
+    "main.07d6fee0.css.map": "/arslan-nadeem/static/css/main.07d6fee0.css.map",
+    "main.dc52e66a.js.map": "/arslan-nadeem/static/js/main.dc52e66a.js.map",
     "787.bc1d2298.chunk.js.map": "/arslan-nadeem/static/js/787.bc1d2298.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ffe66b1.css",
-    "static/js/main.52073c3d.js"
+    "static/css/main.07d6fee0.css",
+    "static/js/main.dc52e66a.js"
   ]
 }
