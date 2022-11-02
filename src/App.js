@@ -9,6 +9,7 @@ import React, { useState } from 'react'
 
 import {
   HashRouter,
+  // BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -37,7 +38,7 @@ function App() {
     setTimeout(() => {
       
       document.getElementById('navbarSupportedContent').classList.remove("show")
-    }, 60);
+    }, 60 );
 }
 
  
@@ -48,7 +49,7 @@ function App() {
       <HashRouter>
         <NavBar mode={mode} toggleMode={toggleMode} />
         <Routes>
-          <Route path="/" element={<LandingPage mode={mode}/>} />
+          <Route exact path="/" element={<LandingPage mode={mode}/>} />
           <Route path="/aboutme" element={<AboutME mode={mode}/>} />
           <Route path="/contact" element={<Contact mode={mode}/>} />
         </Routes>

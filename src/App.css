@@ -1,52 +1,56 @@
 /* About me Imgage */
-.img{
+.img {
   height: 350px !important;
 }
+
 /*  */
 .custom-toggler.navbar-toggler {
   border-color: none !important;
-  border : none
+  border: none
 }
+
 /* Setting the stroke to green using rgb values (0, 128, 0) */
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url(
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(109, 131, 242)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
- }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(109, 131, 242)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
 
 
-.navbar-toggler{
+.navbar-toggler {
   color: #0d6efd;
 }
+
 .navbar-toggler:focus {
   text-decoration: none !important;
   outline: none !important;
   box-shadow: none !important;
 }
-.letter-spcaing{
+
+.letter-spcaing {
   letter-spacing: 2px;
-  
+
 }
 
-.blue-image{
+.blue-image {
   width: 40%;
   position: absolute;
   top: 75px;
   right: 0px;
   z-index: -1
 }
-.perfect-blue{
-  background-color: white ;
+
+.perfect-blue {
+  background-color: white;
 }
 
 /* For the placeholder */
 
 .form-control::placeholder {
   color: black;
-  opacity: 0.6; 
+  opacity: 0.6;
 }
 
-.aboutme-fs{
+.aboutme-fs {
   font-size: 17px;
 }
 
@@ -56,6 +60,7 @@
   /* border-color: rgb(109, 131, 242);
   border-width: 2px; */
 }
+
 .form-check-input {
   height: 20px;
 }
@@ -76,7 +81,7 @@
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1); */
   outline: none;
@@ -86,6 +91,7 @@
   border: none;
   color: #000;
 }
+
 .btn-design:after {
   position: absolute;
   content: "";
@@ -96,20 +102,23 @@
   direction: rtl;
   z-index: -1;
   box-shadow:
-   -7px -7px 20px 0px #fff9,
-   -4px -4px 5px 0px #fff9,
-   7px 7px 20px 0px #0002,
-   4px 4px 5px 0px #0001;
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
   transition: all 0.3s ease;
 }
+
 .btn-design:hover {
   color: #000;
 }
+
 .btn-design:hover:after {
   left: auto;
   right: 0;
   width: 100%;
 }
+
 .btn-design:active {
   top: 2px;
 }
@@ -119,113 +128,146 @@
 /* Media Queries */
 /* For I-Phones */
 
-@media only screen and (max-width: 384px)  { 
-  .query-textcenter-md{
-    display: block !important; 
+@media only screen and (max-width: 384px) {
+  .query-textcenter-md {
+    display: block !important;
   }
+
   /* Margins from top for both blocks */
-  .margin-top{
+  .margin-top {
     margin-top: 6rem;
   }
-  .query-textcenter{
+
+  .query-textcenter {
     text-align: center;
   }
-  .blue-image{
+
+  .blue-image {
     width: 40%;
     position: absolute;
     top: 56px;
     right: 0px;
     z-index: -1
   }
-  .img{
+
+  .img {
     height: 300px !important;
   }
+
   /* Contact full width.. NEM */
-  .full-widht{
+  .full-widht {
     width: 100% !important;
   }
+
   /* Portfolio font size */
-  .port{
+  .port {
     font-size: 20px !important;
   }
-  .folio{
+
+  .folio {
     font-size: 20px !important;
   }
-  .navbar-items{
+
+  .navbar-items {
     font-size: 16px !important;
   }
-  .fontsize-arslan{
+
+  .fontsize-arslan {
     font-size: 32px !important;
   }
-  .fs_creative{
+
+  .fs_creative {
     font-size: 17px !important;
   }
-  .json-text{
+
+  .json-text {
     font-size: 14.5px !important;
   }
-  .json-padding{
+
+  .json-text-ntas-smallscreen {
+    font-size: 13.5px !important;
+  }
+
+  .json-padding {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .contact-npem{
+
+  .contact-npem {
     font-size: 17px !important;
   }
-  .json-margin{
+
+  .json-margin {
     margin-left: none !important;
   }
 }
 
 /* For Smartphone */
 
-@media only screen and (min-width: 384px)  and (max-width: 767px){
-  .query-textcenter-md{
-    display: block !important; 
+@media only screen and (min-width: 385px) and (max-width: 767px) {
+  .query-textcenter-md {
+    display: block !important;
   }
-  .query-textcenter{
+
+  .query-textcenter {
     text-align: center;
   }
-  .margin-top{
+
+  .margin-top {
     margin-top: 6rem;
   }
-  .text-adjustment{
+
+  .fontsize-arslan {
+    font-size: 38px !important;
+  }
+
+  .text-adjustment {
     font-size: 1.1rem !important;
   }
-  .json-text{
+
+  .json-text {
     font-size: 15.5px !important;
   }
-  .json-padding{
+
+  .json-padding {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .contact-npem{
+
+  .contact-npem {
     font-size: 17px !important;
   }
-  
-  .blue-image{
+
+  .blue-image {
     width: 40%;
     position: absolute;
     top: 56px;
     right: 0px;
     z-index: -1
   }
+
   /* Contact full width.. NEM */
-  .full-widht{
+  .full-widht {
     width: 100% !important;
   }
+
   /* Portfolio font size */
-  .port{
+  .port {
     font-size: 20px !important;
   }
-  .folio{
+
+  .folio {
     font-size: 20px !important;
   }
-  .navbar-items{
+
+  .navbar-items {
     font-size: 16px !important;
   }
-  .json-margin{
+
+  .json-margin {
     margin-left: none !important;
   }
-  
+
 }
 
 /* @media screen  and (max-width: 767px) { 
@@ -262,79 +304,97 @@
 
 /* Adjusting -Javascript in json- for tablet*/
 
-@media only screen and (min-width: 768px) and (max-width: 991px)  {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* .json-margin{
     margin-left: 4.3rem;
   } */
   /* For aboutme */
-  .aboutme-query{
+  .aboutme-query {
     /* height: 350px; */
     font-size: 14px;
   }
-  .margin-top-query{
+
+  .margin-top-query {
     margin: none !important;
   }
-  .json-middle{
+
+  .json-middle {
     position: relative;
     bottom: 40px;
     left: 30px;
   }
-  
-  .position-for-contact{
+
+  .position-for-contact {
     position: relative;
     top: 110px;
   }
-  .reach-me{
+
+  .reach-me {
     position: relative;
-    left: 100px;    
+    left: 100px;
   }
-  .json-text{
+
+  .json-text {
     font-size: 14.5px !important;
   }
-  .text-adjustment{
+
+  .text-adjustment {
     font-size: 1.1rem !important;
   }
-  .fontsize-arslan{
+
+  .fontsize-arslan {
     font-size: 33px !important;
   }
-  .json-padding{
+
+  .json-padding {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .json-width-contact{
+
+  .json-width-contact {
     width: 40%;
   }
-  .json-width-contact{
+
+  .json-width-contact {
     width: 50%;
     font-size: 14px !important;
   }
-  .aboutme-btntopmargin{
+
+  .aboutme-btntopmargin {
     margin-top: 0px !important;
   }
-  .blue-image{
+
+  .blue-image {
     width: 40%;
     position: absolute;
     top: 60px;
     right: 0px;
     z-index: -1
   }
-  .md_small_button{
+
+  .md_small_button {
     font-size: 14px !important;
   }
-  .custom-btn{
+
+  .custom-btn {
     width: 160px;
   }
-  .md_social_icon{
+
+  .md_social_icon {
     font-size: 1.7rem !important;
   }
+
   /* Portfolio font size */
-  .port{
+  .port {
     font-size: 20px !important;
   }
-  .folio{
+
+  .folio {
     font-size: 20px !important;
   }
-  .navbar-items{
+
+  .navbar-items {
     font-size: 16px !important;
   }
 }
@@ -343,78 +403,94 @@
 
 
 
-@media only screen and (min-width: 992px) and (max-width: 1200px)  {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* .json-margin{
     margin-left: 4.3rem;
   } */
   /* For aboutme */
-  .aboutme-query{
+  .aboutme-query {
     /* height: 350px; */
     font-size: 14px;
   }
-  .margin-top-query{
+
+  .margin-top-query {
     margin: none !important;
   }
-  .json-middle{
+
+  .json-middle {
     position: relative;
     bottom: 30px;
     left: 30px;
   }
-  
-  .position-for-contact{
+
+  .position-for-contact {
     position: relative;
     top: 110px;
   }
-  .reach-me{
+
+  .reach-me {
     position: relative;
-    left: 100px;    
+    left: 100px;
   }
-  .json-text{
+
+  .json-text {
     width: 62%;
     font-size: 14.5px !important;
   }
-  .text-adjustment{
+
+  .text-adjustment {
     font-size: 1.1rem !important;
   }
-  .fontsize-arslan{
+
+  .fontsize-arslan {
     font-size: 33px !important;
   }
-  .json-padding{
+
+  .json-padding {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  
-  .json-width-contact{
+
+  .json-width-contact {
     width: 40%;
     font-size: 14px !important;
   }
-  .aboutme-btntopmargin{
+
+  /* .aboutme-btntopmargin {
     margin-top: 0px !important;
-  }
-  .blue-image{
+  } */
+
+  .blue-image {
     width: 40%;
     position: absolute;
     top: 55px;
     right: 0px;
     z-index: -1
   }
-  .md_small_button{
+
+  .md_small_button {
     font-size: 14px !important;
   }
-  .custom-btn{
+
+  .custom-btn {
     width: 160px;
   }
-  .md_social_icon{
+
+  .md_social_icon {
     font-size: 1.7rem !important;
   }
+
   /* Portfolio font size */
-  .port{
+  .port {
     font-size: 20px !important;
   }
-  .folio{
+
+  .folio {
     font-size: 20px !important;
   }
-  .navbar-items{
+
+  .navbar-items {
     font-size: 16px !important;
   }
 }
@@ -424,79 +500,109 @@
 
 
 
-@media only screen and (min-width: 1201px)   {
+@media only screen and (min-width: 1201px) {
+
   /* .json-margin{
     margin-left: 4.3rem;
   } */
   /* For aboutme */
-  .aboutme-query{
+  .aboutme-query {
     /* height: 350px; */
     font-size: 14px;
   }
-  .margin-top-query{
+
+  .margin-top-query {
     margin: none !important;
   }
-  .json-middle{
+
+  .json-middle {
     position: relative;
     bottom: 30px;
-    left: 30px;
+    /* left: 30px; */
+    right: 30px;
   }
-  .position-for-contact{
+
+  .position-for-contact {
     position: relative;
     top: 110px;
   }
-  .reach-me{
+
+  .reach-me {
     position: relative;
-    left: 100px;    
+    left: 100px;
   }
-  .json-text{
+
+  .json-text {
     width: 50%;
     font-size: 14.5px !important;
   }
-  .text-adjustment{
+
+  .text-adjustment {
     font-size: 1.1rem !important;
   }
-  .fontsize-arslan{
-    font-size: 33px !important;
-  }
-  .json-padding{
+
+  .json-padding {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  
-  .json-width-contact{
+
+  .json-width-contact {
     width: 35%;
-    font-size: 14px !important;
+    font-size: 15px !important;
+    position: relative !important;
+    bottom: 30px !important;
+    left: 7rem !important;
   }
-  .aboutme-btntopmargin{
+
+  /* .aboutme-btntopmargin {
     margin-top: 0px !important;
-  }
-  .blue-image{
-    
+  } */
+
+  .blue-image {
+
     width: 40%;
     position: absolute;
     top: 55px;
     right: 0px;
-    z-index: -1
+    z-index: -1;
+    height: 650px !important;
   }
-  .md_small_button{
+
+  .md_small_button {
     font-size: 14px !important;
   }
-  .custom-btn{
+
+  .custom-btn {
     width: 160px;
   }
-  .md_social_icon{
+
+  .md_social_icon {
     font-size: 1.7rem !important;
   }
+
   /* Portfolio font size */
-  .port{
+  .port {
     font-size: 20px !important;
   }
-  .folio{
+
+  .folio {
     font-size: 20px !important;
   }
-  .navbar-items{
+
+  .navbar-items {
     font-size: 16px !important;
+  }
+
+  /* recently made changes */
+  .img {
+    height: 300px !important;
+  }
+
+  .fontsize-arslan {
+    font-size: 2.5rem !important;
+  }
+  .fs_creative {
+    font-size: 1.2rem !important;
   }
 }
 
@@ -570,14 +676,3 @@
     height: 790px;
   }
 } */
-
-
-
-
-
-
-
-
-
-
-
