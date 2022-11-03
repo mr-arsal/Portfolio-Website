@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../Image/arslanimage.jpeg'
+import pdf from '../Resume/Arslan Nadeem-Frontend Developer.pdf'
 
 const aboutMe = (props) => {
     return (
@@ -18,7 +19,7 @@ const aboutMe = (props) => {
                         <p>You can trust me to be 0.1% better every day at my job. I cannot stop learning and that is my biggest strength.</p>
                     </div>
                     <div className='text-center text-lg-start'>
-                        <a href='/ArslanNadeem-Frontend Developer.pdf' download="Arslan Nadeem-Frontend Developer" target='_blank'>
+                        <a href={pdf} download="Arslan Nadeem-Frontend Developer" target='_blank'>
                             <button type="button" className="md_small_button aboutme-btntopmargin btn btn-primary text-white custom-btn btn-design mb-4 mt-4 margin-top-query query-textcenter ">Download Resume</button>
                         </a>
                     </div>
