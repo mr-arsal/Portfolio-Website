@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../Logo/AR.png'
 // import { useState } from 'react'
 
 
@@ -16,7 +17,7 @@ export default function Navbar(props) {
            
             <nav  id='nav-bg' className={`navbar navbar-expand-sm shadow `} style={{ backgroundColor: props.mode === 'light' ? 'white' : 'rgb(35, 35, 35)' }}>
                 <div className="container">
-                    <Link className="navbar-brand  font-family" to="/"> <span className={`port fw-semibold text-${props.mode === 'light' ? 'primary' : 'white'}`} style={{ color: props.mode === 'light' ? 'rgb(109, 131, 242)' : 'white', fontSize: '17px' }}>Port</span> <span className={`folio fst-italic text-${props.mode === 'light' ? 'primary' : 'white'}`} style={{ fontSize: '17px' }}>folio</span> </Link>
+                    <Link className="navbar-brand  font-family" to="/"> <img src={logo} alt="Logo" width="45" height="40"/> </Link>
                     <button className="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
