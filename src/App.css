@@ -3,19 +3,7 @@
   height: 350px !important;
 }
 
-/*  */
-.custom-toggler.navbar-toggler {
-  border-color: none !important;
-  border: none
-}
-
-/* Setting the stroke to green using rgb values (0, 128, 0) */
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(109, 131, 242)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-}
-
-
+/* Navbar Toggler */
 .navbar-toggler {
   color: #0d6efd;
 }
@@ -26,11 +14,23 @@
   box-shadow: none !important;
 }
 
-.letter-spcaing {
-  letter-spacing: 2px;
-
+.custom-toggler.navbar-toggler {
+  border-color: none !important;
+  border: none
 }
 
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(109, 131, 242)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+/* Navbar Items Letter Spacing */
+.letter-spcaing {
+  letter-spacing: 2px;
+}
+
+
+/* Blue Iamge */
 .blue-image {
   width: 40%;
   position: absolute;
@@ -38,18 +38,17 @@
   right: 0px;
   z-index: -1
 }
-
 .perfect-blue {
   background-color: white;
 }
 
 /* For the placeholder */
-
 .form-control::placeholder {
   color: black;
   opacity: 0.6;
 }
 
+/* Navabr Item */
 .aboutme-fs {
   font-size: 17px;
 }
@@ -57,33 +56,23 @@
 /* Dark mode button */
 .form-switch .form-check-input {
   width: 2.4em;
-  /* border-color: rgb(109, 131, 242);
-  border-width: 2px; */
 }
-
 .form-check-input {
   height: 20px;
 }
 
-
 /* Download Resume Button */
-
 .custom-btn {
   width: 190px;
   height: 50px;
   color: #fff;
   border-radius: 5px;
-  /* padding: 10px 25px; */
   font-family: 'Lato', sans-serif;
   font-weight: 500;
-  /* background: transparent; */
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1); */
   outline: none;
 }
 
@@ -123,7 +112,9 @@
   top: 2px;
 }
 
+
 /* ------------------------------------------------ */
+
 
 /* Media Queries */
 /* For I-Phones */
@@ -270,48 +261,13 @@
 
 }
 
-/* @media screen  and (max-width: 767px) { 
-  .query-textcenter-md{
-    display: block !important; 
-   
-  }
-  
-  .query-textcenter{
-    text-align: center;
-  }
-  .margin-top{
-    margin-top: 6.5rem;
-  }
-  .full-widht{
-    width: 100% !important;
-  }
-  .fontsize-arslan{
-    font-size: 33px !important;
-  }
-  .json-padding{
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .blue-image{
-    width: 40%;
-    position: absolute;
-    top: 60px;
-    right: 0px;
-    z-index: -1
-  }
- 
-} */
 
 /* Adjusting -Javascript in json- for tablet*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-  /* .json-margin{
-    margin-left: 4.3rem;
-  } */
   /* For aboutme */
   .aboutme-query {
-    /* height: 350px; */
     font-size: 14px;
   }
 
@@ -400,17 +356,11 @@
 }
 
 
-
-
-
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 
-  /* .json-margin{
-    margin-left: 4.3rem;
-  } */
+  
   /* For aboutme */
   .aboutme-query {
-    /* height: 350px; */
     font-size: 14px;
   }
 
@@ -457,10 +407,6 @@
     font-size: 14px !important;
   }
 
-  /* .aboutme-btntopmargin {
-    margin-top: 0px !important;
-  } */
-
   .blue-image {
     width: 40%;
     position: absolute;
@@ -496,18 +442,11 @@
 }
 
 
-
-
-
-
 @media only screen and (min-width: 1201px) {
 
-  /* .json-margin{
-    margin-left: 4.3rem;
-  } */
+  
   /* For aboutme */
   .aboutme-query {
-    /* height: 350px; */
     font-size: 14px;
   }
 
@@ -518,7 +457,6 @@
   .json-middle {
     position: relative;
     bottom: 30px;
-    /* left: 30px; */
     right: 30px;
   }
 
@@ -553,10 +491,6 @@
     bottom: 30px !important;
     left: 7rem !important;
   }
-
-  /* .aboutme-btntopmargin {
-    margin-top: 0px !important;
-  } */
 
   .blue-image {
 
@@ -611,73 +545,3 @@
   }
 }
 
-/* @media screen and (min-width: 992px) and (max-width: 1326px){
-  .aboutme-query{
-    font-size: 14px;
-  }
-  .margin-top-query{
-    margin: none !important;
-  }
-  .json-middle{
-    position: relative;
-    bottom: 40px;
-  }
-  .position-for-contact{
-    position: relative;
-    top: 110px;
-  }
-  .reach-me{
-    position: relative;
-    left: 100px;    
-  }
-  .json-width-contact{
-    width: 40%;
-    font-size: 16px !important;
-  }
-  
-} */
-
-/* @media screen and (min-width: 992px) {
-  .json-width-contact{
-    width: 40%;
-    font-size: 15px !important;
-  }
-  .blue-image{
-    width: 40%;
-    position: absolute;
-    top: 71px;
-    right: 0px;
-    z-index: -1;
-  }
-} */
-
-
-/* @media screen and (min-width: 1327px) {
-  .json-middle{
-    position: relative;
-    bottom: 20px;
-  }
-  .position-for-contact{
-    position: relative;
-    top: 110px;
-  }
-  .reach-me{
-    position: relative;
-    left: 100px;    
-  }
-  .json-width{
-    width: 80%;
-  }
-  .json-width-contact{
-    width: 50%;
-    margin-left: 20%;
-  }
-  .blue-image{
-    width: 40%;
-    position: absolute;
-    top: 71px;
-    right: 0px;
-    z-index: -1;
-    height: 790px;
-  }
-} */
