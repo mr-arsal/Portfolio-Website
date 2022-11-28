@@ -4,6 +4,7 @@ import pdf from '../Resume/Arslan Nadeem-Frontend Developer.pdf'
 const landingPage = (props) => {
 
     document.title = `${props.home} - Arslan Nadeem`
+    
     return (
         <>
 
@@ -36,7 +37,6 @@ const landingPage = (props) => {
                     <div>6 &nbsp; &nbsp; &nbsp; &#125;</div>
                 </div>
             </div>
-
         </>
     )
 }
