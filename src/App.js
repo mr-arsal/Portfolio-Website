@@ -49,15 +49,11 @@ function App() {
       <HashRouter>
         <NavBar mode={mode} toggleMode={toggleMode} />
         <Routes>
-          <Route exact path="/" element={<LandingPage mode={mode}/>} />
-          <Route path="/aboutme" element={<AboutME mode={mode}/>} />
-          <Route path="/contact" element={<Contact mode={mode}/>} />
+          <Route exact path="/" element={<LandingPage home='Home' mode={mode}/>} />
+          <Route path="/aboutme" element={<AboutME aboutMe='About me' mode={mode}/>} />
+          <Route path="/contact" element={<Contact contact='Contact' mode={mode}/>} />
         </Routes>
       </HashRouter>
-
-      
-      
-      
     </div>
     </>
   );

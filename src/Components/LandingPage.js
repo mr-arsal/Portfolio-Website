@@ -2,6 +2,8 @@ import React from 'react'
 import pdf from '../Resume/Arslan Nadeem-Frontend Developer.pdf'
 
 const landingPage = (props) => {
+
+    document.title = `${props.home} - Arslan Nadeem`
     return (
         <>
 
@@ -12,7 +14,7 @@ const landingPage = (props) => {
                     <div className={`text-uppercase  font-family query-textcenter fontsize-arslan pb-3 p-lg-0 text-${props.mode === 'light' ? 'black' : 'white'}`} style={{ fontWeight: '1000', fontSize: '2.5rem' }}>Arslan Nadeem</div>
                     <div className={`fs_creative text-uppercase  font-family query-textcenter text-adjustment text-${props.mode === 'light' ? 'black' : 'white'}`} style={{ fontSize: '22px' }}>Creative Front-End Web Developer</div>
                     <div className=' text-center text-md-start'>
-                    <a href={pdf} download="Arslan Nadeem-Frontend Developer" target='_blank' >
+                    <a href={pdf} download="Arslan Nadeem-Frontend Developer" rel="noreferrer" target='_blank' >
                         <button type="button" className="md_small_button custom-btn btn-design query-textcenter btn-primary btn text-white" style={{marginTop:'2rem'}}>Download Resume</button>
                     </a>
                     </div>

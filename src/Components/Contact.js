@@ -4,6 +4,8 @@ import emailjs from '@emailjs/browser';
 
 const Contact = (props) => {
 
+    document.title = `${props.contact} - Arslan Nadeem`
+
     // For input tags
     const handleOnChange = (e) => {
         setEmail(e.target.value);

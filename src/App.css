@@ -1,5 +1,5 @@
-/* About me Imgage */
-.img {
+/* About me arsalage */
+.arsal {
   height: 350px !important;
 }
 
@@ -141,7 +141,7 @@
     z-index: -1
   }
 
-  .img {
+  .arsal {
     height: 300px !important;
   }
 
@@ -499,7 +499,7 @@
     top: 55px;
     right: 0px;
     z-index: -1;
-    height: 650px !important;
+    height: 590px !important;
   }
 
   .md_small_button {
@@ -527,7 +527,7 @@
     font-size: 16px !important;
   }
 
-  .img {
+  .arsal {
     height: 300px !important;
   }
 
@@ -538,7 +538,7 @@
     font-size: 1.2rem !important;
   }
   .screen-height{
-    height: 600px !important;
+    height: 570px !important;
   }
   .nem-lg{
     font-size: 1.1rem !important;
