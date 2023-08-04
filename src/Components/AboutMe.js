@@ -1,5 +1,5 @@
 import React from 'react'
-import arsal from '../Image/arslanimage.jpeg'
+import arsal from '../Image/arslan imageeee.png'
 import pdf from '../Resume/Arslan Nadeem-Frontend Developer.pdf'
 
 const aboutMe = (props) => {
